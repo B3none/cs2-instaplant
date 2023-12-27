@@ -1,4 +1,4 @@
-# CS2 Fast Plant
+# CS2 Instaplant
 Plant the bomb instantly as a terrorist.
 
 ## Setup for development
