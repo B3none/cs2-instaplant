@@ -20,13 +20,6 @@ public class InstaplantPlugin : BasePlugin
     [GameEventHandler]
     public HookResult OnBombBeginPlant(EventBombBeginplant @event, GameEventInfo info)
     {
-        Helpers.FastPlantBomb();
-
-        return HookResult.Continue;
-    }
-    
-    public static void FastPlantBomb()
-    {
         var bombEntities = Utilities.FindAllEntitiesByDesignerName<CC4>("weapon_c4").ToList();
 
         if (!bombEntities.Any())
@@ -42,5 +35,7 @@ public class InstaplantPlugin : BasePlugin
 
         bomb.BombPlacedAnimation = false;
         bomb.ArmedTime = 0.0f;
+
+        return HookResult.Continue;
     }
 }
