@@ -1,11 +1,9 @@
 ﻿using CounterStrikeSharp.API;
 using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Core.Attributes;
-using CounterStrikeSharp.API.Modules.Utils;
-using System.Numerics;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
 
-namespace FastPlantPlugin;
+namespace InstaplantPlugin;
 
 [MinimumApiVersion(129)]
 public class InstaplantPlugin : BasePlugin
