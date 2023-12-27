@@ -24,13 +24,13 @@ public class InstaplantPlugin : BasePlugin
 
         if (!bombEntities.Any())
         {
-            return;
+            return HookResult.Continue;
         }
 
         var bomb = bombEntities.FirstOrDefault();
         if (bomb == null)
         {
-            return;
+            return HookResult.Continue;
         }
 
         bomb.BombPlacedAnimation = false;
